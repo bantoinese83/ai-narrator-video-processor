@@ -23,16 +23,18 @@ class OpenAIClient:
             logging.error(f"Failed to generate speech: {e}")
             raise
 
-    def get_narration(self, image_url):
+    def get_narration(self, image_url, prompt_file='prompt.md'):
         try:
+            with open(prompt_file, 'r') as file:
+                prompt_text = file.read()
+
             response = self.client.chat.completions.create(
                 model=DESCRIPTION_MODEL,
                 messages=[
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": "Provide narration for the following video , "
-                                                     "describe exactly whats happening in the video."},
+                            {"type": "text", "text": prompt_text},
                             {
                                 "type": "image_url",
                                 "image_url": {

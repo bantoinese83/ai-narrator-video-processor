@@ -4,6 +4,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
+- [Dependencies](#dependencies)
 - [Usage](#usage)
 
 
@@ -27,7 +28,7 @@ AI Narrator Video Processor is a tool that takes a video file, extracts frames, 
 1. Clone the repository:
     ```sh
     git clone https://github.com/bantoinese83/ai-narrator-video-processor.git
-    cd ai-narrator
+    cd ai_narrator
     ```
 
 2. Create and activate a virtual environment:
