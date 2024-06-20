@@ -58,6 +58,16 @@ AI Narrator Video Processor is a tool that takes a video file, extracts frames, 
 -   OpenAI Python client
 -   Boto3 (AWS SDK for Python)
 
+# Voice Choices
+
+    ALLOY = "alloy"
+    ECHO = "echo"
+    FABLE = "fable"
+    ONYX = "onyx"
+    NOVA = "nova"
+    SHIMMER = "shimmer"
+
+
 ## Usage
 To run the video processor:
 ```sh
